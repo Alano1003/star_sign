@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>星星知希 – 牡羊座 Aries</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        body {
+            background-image: url(./assests/background2.jpg);
+            background-size: auto 300vh;
+            height: 100vh;
+            width: 100%;
+        }
+        header{
+            height: 90px;
+            width: 100%;
+        }
+        main{
+            width: 100%;
+            height: 1500px;
+        }
+        .container{
+            /* padding: 30px; */
+            margin: 30px;
+            width: 90%;
+            display: grid;
+            grid-template-rows: 400px 600px 600px;
+            grid-auto-columns: 100%;
+            justify-content: center;
+            /* background-color: black; */
+            gap: 10px;
+            
+        }
+        .item{
+            width: 100%;
+            background-color: rgba(240, 248, 255, 0.1);
+            border: 1px solid grey;
+            border-radius: 5px 5px 5px 5px;
+            justify-content: center;
+            padding: 30px;
+            text-align: center;
+        }
+
+        button{
+                background-color: transparent;
+                box-sizing: border-box;
+                border: none;
+                font-size: 30px;
+                margin: 10px;
+        }
+        
+        header a{
+            color: white;
+            text-decoration-line: none;
+        }
+
+        #logo img {
+            width: 100px;
+            height: 100px;
+            margin-top: 5px;
+            margin-left: 10px;
+            position: relative;
+        }
+        #logo img:hover{
+            width: 105px;
+            height: 105px;
+            opacity: 1;
+            transition: 1s;
+        }
+        #logo{
+            float: left;
+            width: 10%;
+        }
+
+        #menu{
+            float: right;
+            text-align: center;
+            padding-right: 30px;
+            margin-top: 25px;
+        }
+        .story{
+            color: white;
+            padding-right: 40px;
+            text-decoration: none;
+        }
+        .story a:hover {
+            color: gold;
+            /* width: 73%; */
+        }
+
+        .role{
+            color: white;
+            margin-right: 50px;
+            text-decoration: none;
+        }
+        .role a:hover{
+            color: gold;
+        }
+
+        .draw{
+            color: white;
+            margin-right: 80px;
+            text-decoration: none;
+        }
+        .draw a:hover{
+            color: gold;
+        }
+        #story{
+            text-align: center;
+        }
+        h1, h3{
+            color: white;
+        }
+        #story p{
+            color: white;
+        }
+        #role p{
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div id="logo">
+            <a href="start.html"><img src="./assests/logo.png" alt=""></a>
+        </div>
+        <div id="menu">
+            <button class="story"><a href="#story">story</a></button>
+            <button class="role"><a href="#role">role</a></button>
+            <button class="draw"><a href="#draw">draw</a></button>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="item" id="story">
+                <h1>STORY</h1></br>
+                <br><p>牡羊座代表名叫克律索馬羅斯的公羊</p>
+                <br><p>佛里克索斯和赫勒是阿塔瑪斯國王和原配王后涅斐勒的孩子，第二任王后伊諾出於妒忌想要謀害國王之前妻的孩子。</p>
+                <br><p>她在維奧蒂亞州引發饑荒並偽造德爾菲神諭說是要以佛里克索斯獻祭才能結束饑荒，促使阿塔瑪斯準備犧牲親子。</p>
+                <br><p>涅斐勒為了拯救她的孩子請求宙斯與赫耳墨斯的協助，獲得會飛的公羊克律索馬羅斯，克律索馬羅斯遵照命令拯救佛里克索斯和赫勒，將他們帶到科爾基斯。</p>
+                <br><p>但是赫勒中途落入達達尼爾海峽中不幸溺斃，所以這裡又稱赫勒斯滂海峽以示紀念。</p>
+                <br><p>佛里克索斯抵達科爾基斯後用金羊向宙斯獻祭並把羊毛送給當地的國王埃厄忒斯，埃厄忒斯感激之下把他的女兒卡爾基奧佩許配給佛里克索斯。</p>
+            </div>
+            <div class="item" id="role">
+                <h1>ROLE</h1></br>
+                <img src="./assests/aries.jpg" width="280px" height="350px" alt="">
+                <h3>圖為赫勒從克律索馬羅斯背上落入海中</h3></br>
+                <p>克律索馬羅斯是海神波賽頓與西奧芬所生的孩子，也是神中之神宙斯與神使荷米斯送給涅斐勒的會飛和說話的金色公羊。</p>
+                <p>當作是拯救她的孩子佛里克索斯與赫勒的援兵。</p>
+            </div>
+            <div class="item" id="draw">
+                <h1>DRAW</h1></br>
+                <canvas id="myCanvas" height="550" width="600"></canvas>
+            </div>
+            <script>
+                const canvas = document.getElementById("myCanvas");
+                const ctx = canvas.getContext("2d");
+        
+                ctx.beginPath();
+                ctx.moveTo(120, 50)
+                ctx.lineTo(310, 150)
+                ctx.lineTo(350, 190)
+                ctx.lineTo(355, 225)
+
+                // ctx.lineTo()
+                ctx.strokeStyle = "aliceblue"
+                // ctx.closePath()
+                ctx.stroke()
+        
+                ctx.beginPath();
+                ctx.arc(120, 50, 4, Math.PI*0, Math.PI*2, true);
+                ctx.fillStyle = "white"
+                ctx.fill();
+        
+                ctx.beginPath();
+                ctx.arc(310, 150, 4, Math.PI*0, Math.PI*2, true);
+                ctx.fillStyle = "white"
+                ctx.fill();
+        
+                ctx.beginPath();
+                ctx.arc(350, 190, 4, Math.PI*0, Math.PI*2, true);
+                ctx.fillStyle = "white"
+                ctx.fill();
+        
+                ctx.beginPath();
+                ctx.arc(355, 225, 4, Math.PI*0, Math.PI*2, true);
+                ctx.fillStyle = "white"
+                ctx.fill();
+        
+            </script>
+        </div>
+    </main>
+</body>
+
+</html>

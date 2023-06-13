@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>星星知希 – 金牛座 Taurus</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        body {
+            background-image: url(./assests/background2.jpg);
+            background-size: auto 300vh;
+            height: 100vh;
+            width: 100%;
+        }
+        header{
+            height: 90px;
+            width: 100%;
+        }
+        main{
+            width: 100%;
+            height: 1500px;
+        }
+        .container{
+            /* padding: 30px; */
+            margin: 30px;
+            width: 90%;
+            display: grid;
+            grid-template-rows: 350px 550px 650px;
+            grid-auto-columns: 100%;
+            justify-content: center;
+            /* background-color: black; */
+            gap: 10px;
+            
+        }
+        .item{
+            width: 100%;
+            background-color: rgba(240, 248, 255, 0.1);
+            border: 1px solid grey;
+            border-radius: 5px 5px 5px 5px;
+            justify-content: center;
+            padding: 30px;
+            text-align: center;
+        }
+
+        button{
+            background-color: transparent;
+            box-sizing: border-box;
+            border: none;
+            font-size: 30px;
+            margin: 10px;
+        }
+        
+        header a{
+            color: white;
+            text-decoration-line: none;
+        }
+
+        #logo img {
+            width: 100px;
+            height: 100px;
+            margin-top: 5px;
+            margin-left: 10px;
+            position: relative;
+        }
+        #logo img:hover{
+            width: 105px;
+            height: 105px;
+            opacity: 1;
+            transition: 1s;
+        }
+        #logo{
+            float: left;
+            width: 10%;
+        }
+
+        #menu{
+            float: right;
+            text-align: center;
+            padding-right: 30px;
+            margin-top: 25px;
+        }
+        .story{
+            color: white;
+            padding-right: 40px;
+            text-decoration: none;
+        }
+        .story a:hover {
+            color: gold;
+            /* width: 73%; */
+        }
+
+        .role{
+            color: white;
+            margin-right: 50px;
+            text-decoration: none;
+        }
+        .role a:hover{
+            color: gold;
+        }
+
+        .draw{
+            color: white;
+            margin-right: 80px;
+            text-decoration: none;
+        }
+        .draw a:hover{
+            color: gold;
+        }
+        #story{
+            text-align: center;
+        }
+        h1, h3{
+            color: white;
+        }
+        #story p{
+            color: white;
+        }
+        #role p{
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div id="logo">
+            <a href="start.html"><img src="./assests/logo.png" alt=""></a>
+        </div>
+        <div id="menu">
+            <button class="story"><a href="#story">story</a></button>
+            <button class="role"><a href="#role">role</a></button>
+            <button class="draw"><a href="#draw">draw</a></button>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="item" id="story">
+                <h1>STORY</h1></br>
+                <br><p>金牛座是宙斯的化身。傳說宙斯喜歡阿戈諾爾之女歐羅芭，她常在蘇爾沙灘上玩。</p>
+                <br><p>宙斯便要赫耳墨斯在附近的一個小丘上放牛，宙斯就化身成牛混在牛群中，趁機靠近她。</p>
+                <br><p>由於此牛十分雪白、牛角閃閃發光，歐羅芭深被牠吸引，白牛示意她騎上去，牠載歐羅芭渡過海洋，游到深水的地方，迫使歐羅芭抱著牠</p>
+                <br><p>最終在克里特島上露出真面目，宙斯得歐羅芭歡心，她也替宙斯生了多個兒子，而宙斯為紀念此事，將金牛化成星座作紀念。</p>
+            </div>
+            <div class="item" id="role">
+                <h1>ROLE</h1></br>
+                <img src="./assests/taurus.jpg" width="200px" height="300px" alt="">
+                <br><br><h3>圖為歐羅芭坐在變成了一頭公牛的宙斯背上，與奧維德同時代龐貝城的傑森之家壁畫。</h3></br>
+                <p>歐羅芭是美麗的腓尼基公主，主要有兩種關於她的故事，一說她被宙斯誘姦，然後宙斯將她帶至克里特島，生下拉達曼迪斯、米諾斯、薩爾珀冬。</p>
+                <p>一說她是被克里特人綁架到克里特島。歐洲大陸以她的名字命名。</p>
+            </div>
+            <div class="item" id="draw">
+                <h1>DRAW</h1></br>
+                <canvas id="myCanvas" height="600" width="600"></canvas>
+            </div>
+            <script>
+                const canvas = document.getElementById("myCanvas");
+                const ctx = canvas.getContext("2d");
+        
+                ctx.beginPath();
+                ctx.moveTo(120, 50)
+                ctx.lineTo(280, 170)
+                ctx.lineTo(290, 130)
+                ctx.lineTo(340, 125)
+                ctx.lineTo(390, 100)
+                ctx.lineTo(440, 270)
+                ctx.lineTo(350, 240)
+                ctx.lineTo(260, 250)
+                ctx.lineTo(270, 280)
+                ctx.lineTo(320, 300)
+                ctx.lineTo(270, 280)
+                ctx.lineTo(260, 250)
+                ctx.lineTo(350, 240)
+                ctx.lineTo(440, 270)
+                ctx.lineTo(350, 320)
+                ctx.lineTo(430, 360)
+                ctx.lineTo(350, 320)
+                ctx.lineTo(440, 270)
+                ctx.lineTo(350, 240)
+                ctx.lineTo(270, 200)
+                ctx.lineTo(100, 140)
+
+                // ctx.lineTo()
+                ctx.strokeStyle = "aliceblue"
+                // ctx.closePath()
+                ctx.stroke()
+        
+                ctx.beginPath();
+                ctx.arc(120, 50, 4, Math.PI*0, Math.PI*2, true);
+                ctx.fillStyle = "white"
+                ctx.fill();
+        
+                ctx.beginPath();
+                ctx.arc(280, 170, 4, Math.PI*0, Math.PI*2, true);
+                ctx.fillStyle = "white"
+                ctx.fill();
+        
+                ctx.beginPath();
+                ctx.arc(290, 130, 4, Math.PI*0, Math.PI*2, true);
+                ctx.fillStyle = "white"
+                ctx.fill();
+        
+                ctx.beginPath();
+                ctx.arc(340, 125, 4, Math.PI*0, Math.PI*2, true);
+                ctx.fillStyle = "white"
+                ctx.fill();
+        
+                ctx.beginPath();
+                ctx.arc(390, 100, 4, Math.PI*0, Math.PI*2, true);
+                ctx.fillStyle = "white"
+                ctx.fill();
+        
+                ctx.beginPath();
+                ctx.arc(440, 270, 4, Math.PI*0, Math.PI*2, true);
+                ctx.fillStyle = "white"
+                ctx.fill();
+        
+                ctx.beginPath();
+                ctx.arc(350, 240, 4, Math.PI*0, Math.PI*2, true);
+                ctx.fillStyle = "white"
+                ctx.fill();
+        
+                ctx.beginPath();
+                ctx.arc(260, 250, 4, Math.PI*0, Math.PI*2, true);
+                ctx.fillStyle = "white"
+                ctx.fill();
+        
+                ctx.beginPath();
+                ctx.arc(270, 280, 4, Math.PI*0, Math.PI*2, true);
+                ctx.fillStyle = "white"
+                ctx.fill();
+        
+                ctx.beginPath();
+                ctx.arc(320, 300, 4, Math.PI*0, Math.PI*2, true);
+                ctx.fillStyle = "white"
+                ctx.fill();
+
+                ctx.beginPath();
+                ctx.arc(350, 320, 4, Math.PI*0, Math.PI*2, true);
+                ctx.fillStyle = "white"
+                ctx.fill();
+
+                ctx.beginPath();
+                ctx.arc(270, 200, 4, Math.PI*0, Math.PI*2, true);
+                ctx.fillStyle = "white"
+                ctx.fill();
+
+                ctx.beginPath();
+                ctx.arc(100, 140, 4, Math.PI*0, Math.PI*2, true);
+                ctx.fillStyle = "white"
+                ctx.fill();
+
+                ctx.beginPath();
+                ctx.arc(430, 360, 4, Math.PI*0, Math.PI*2, true);
+                ctx.fillStyle = "white"
+                ctx.fill();
+            </script>
+        </div>
+    </main>
+</body>
+
+</html>

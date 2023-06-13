@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>星星知希 – 射手座 Sagittarius</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            background-image: url(./assests/background2.jpg);
+            background-size: auto 300vh;
+            height: 100vh;
+            width: 100%;
+        }
+
+        header {
+            height: 90px;
+            width: 100%;
+        }
+
+        main {
+            width: 100%;
+            height: 1500px;
+        }
+
+        .container {
+            /* padding: 30px; */
+            margin: 30px;
+            width: 90%;
+            display: grid;
+            grid-template-rows: 500px 500px 550px;
+            grid-auto-columns: 100%;
+            justify-content: center;
+            /* background-color: black; */
+            gap: 10px;
+
+        }
+
+        .item {
+            width: 100%;
+            background-color: rgba(240, 248, 255, 0.1);
+            border: 1px solid grey;
+            border-radius: 5px 5px 5px 5px;
+            justify-content: center;
+            padding: 30px;
+            text-align: center;
+        }
+
+        button {
+            background-color: transparent;
+            box-sizing: border-box;
+            border: none;
+            font-size: 30px;
+            margin: 10px;
+        }
+
+        header a {
+            color: white;
+            text-decoration-line: none;
+        }
+
+        #logo img {
+            width: 100px;
+            height: 100px;
+            margin-top: 5px;
+            margin-left: 10px;
+            position: relative;
+        }
+
+        #logo img:hover {
+            width: 105px;
+            height: 105px;
+            opacity: 1;
+            transition: 1s;
+        }
+
+        #logo {
+            float: left;
+            width: 10%;
+        }
+
+        #menu {
+            float: right;
+            text-align: center;
+            padding-right: 30px;
+            margin-top: 25px;
+        }
+
+        .story {
+            color: white;
+            padding-right: 40px;
+            text-decoration: none;
+        }
+
+        .story a:hover {
+            color: gold;
+            /* width: 73%; */
+        }
+
+        .role {
+            color: white;
+            margin-right: 50px;
+            text-decoration: none;
+        }
+
+        .role a:hover {
+            color: gold;
+        }
+
+        .draw {
+            color: white;
+            margin-right: 80px;
+            text-decoration: none;
+        }
+
+        .draw a:hover {
+            color: gold;
+        }
+
+        #story p {
+            color: white;
+        }
+
+        #role p {
+            color: white;
+        }
+        h1,h3,p {
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div id="logo">
+            <a href="start.html"><img src="./assests/logo.png" alt=""></a>
+        </div>
+        <div id="menu">
+            <button class="story"><a href="#story">story</a></button>
+            <button class="role"><a href="#role">role</a></button>
+            <button class="draw"><a href="#draw">draw</a></button>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="item" id="story">
+                <h1>STORY</h1></br>
+                <p>在希臘神話中，射手座的箭對著位於它前方的天蠍座的胸，</p><br>
+                <p>射手座在天上是為了給去取金羊毛的伊阿宋指路，古希臘人將射手座與薩杜恩（半人半羊）以及克洛托斯聯繫起來。</p><br>
+                <p>羅馬人卻將他認為是優雅而智慧的喀戎，這導致人們常常把它與南天的半射手座混淆，然而這兩種生物有一個明顯的區別，</p><br>
+                <p>射手座是一名獵手，這可以追溯到美索不達米亞的箭神涅伽爾（Nergal），而他與暴躁的戰神和火神伊拉（Irra）有關。</p><br>
+                <p>天神宙斯的父親克羅諾斯與甯芙生下的孩子叫奇倫。奇倫原是不死之身，但最後卻仍舊死去，是因為大力士赫拉克勒斯正和人馬族爭鬥，奇倫因為生性愛好和平，便退出爭執的地方，</p><br>
+                <p>卻在混亂中誤踩了赫拉克勒斯在先前射殺九頭蛇時沾了毒血的箭，進而不幸中劇毒，倒地不起。</p><br>
+                <p>由於無藥可救，卻又痛苦萬分的奇倫便把不死之身傳給了普羅米修斯這位盜取天火給人類的神之後，就死去了。</p><br>
+                <p>宙斯知道這件事之後非常傷心，便將奇倫升上星空成為射手座。</p><br>
+            </div>
+            <div class="item" id="role">
+                <h1>ROLE</h1></br>
+                <img src="./assests/Sagittarius01.jpg" alt="半人半馬的神 — 奇倫（Chiron）" width="20%">
+                <br><br><p><h3><b>半人半馬的神 — 奇倫（Chiron）</b></h3></p><br>
+                <p>天性善良及充滿智慧，不像其他的人馬般地凶暴殘忍。</p><br>
+                <p>相當聰明，從阿波羅及月神阿特密絲那兒學得了許多知識及技能。</p><br>
+            </div>
+            <div class="item" id="draw">
+                <h1>DRAW</h1></br>
+                <canvas id="myCanvas" height="500" width="500">
+                    <script>
+                        const canvas = document.getElementById("myCanvas");
+                        const ctx = canvas.getContext("2d");
+
+                        ctx.beginPath();
+                        ctx.moveTo(230, 250)
+                        ctx.lineTo(190, 240)
+                        ctx.lineTo(170, 220)
+
+                        ctx.moveTo(190, 240)
+                        ctx.lineTo(215, 225)
+
+                        ctx.moveTo(190, 240)
+                        ctx.lineTo(170, 220)
+                        ctx.lineTo(120, 190)
+                        ctx.lineTo(130, 170)
+                        ctx.lineTo(160, 140) 
+                        ctx.lineTo(215, 150) 
+                        ctx.lineTo(230, 160)
+                        ctx.lineTo(245, 150)
+                        ctx.lineTo(230, 140)
+                        ctx.lineTo(210, 100)
+                        ctx.lineTo(195, 105)
+                        ctx.lineTo(160, 90)
+
+                        ctx.moveTo(210, 100)
+                        ctx.lineTo(225, 90)
+
+                        ctx.moveTo(245, 150)
+                        ctx.lineTo(265, 130)
+                        ctx.lineTo(280, 70)
+
+                        ctx.moveTo(265, 130)
+                        ctx.lineTo(290, 160)
+                        ctx.lineTo(285, 190)
+                        ctx.lineTo(300, 210)
+
+                        ctx.moveTo(290, 160)
+                        ctx.lineTo(330, 160)
+                        ctx.lineTo(360, 130)
+
+                        // ctx.lineTo()
+                        ctx.strokeStyle = "aliceblue"
+                        // ctx.closePath()
+                        ctx.stroke()
+
+                        ctx.beginPath();
+                        ctx.arc(230, 250, 4, Math.PI * 0, Math.PI * 2, true);
+                        ctx.fillStyle = "white"
+                        ctx.fill();
+
+                        ctx.beginPath();
+                        ctx.arc(190, 240, 4, Math.PI * 0, Math.PI * 2, true);
+                        ctx.fillStyle = "white"
+                        ctx.fill();
+
+                        ctx.beginPath();
+                        ctx.arc(170, 220, 4, Math.PI * 0, Math.PI * 2, true);
+                        ctx.fillStyle = "white"
+                        ctx.fill();
+
+                        ctx.beginPath();
+                        ctx.arc(215, 225, 4, Math.PI * 0, Math.PI * 2, true);
+                        ctx.fillStyle = "white"
+                        ctx.fill();
+
+                        ctx.beginPath();
+                        ctx.arc(120, 190, 8, Math.PI * 0, Math.PI * 2, true);
+                        ctx.fillStyle = "white"
+                        ctx.fill();
+
+                        ctx.beginPath();
+                        ctx.arc(130, 170, 4, Math.PI * 0, Math.PI * 2, true);
+                        ctx.fillStyle = "white"
+                        ctx.fill();
+
+                        ctx.beginPath();
+                        ctx.arc(160, 140, 4, Math.PI * 0, Math.PI * 2, true);
+                        ctx.fillStyle = "white"
+                        ctx.fill();
+
+                        ctx.beginPath();
+                        ctx.arc(215, 150, 4, Math.PI * 0, Math.PI * 2, true);
+                        ctx.fillStyle = "white"
+                        ctx.fill();
+
+                        ctx.beginPath();
+                        ctx.arc(230, 160, 4, Math.PI * 0, Math.PI * 2, true);
+                        ctx.fillStyle = "white"
+                        ctx.fill();
+
+                        ctx.beginPath();
+                        ctx.arc(245, 150, 4, Math.PI * 0, Math.PI * 2, true);
+                        ctx.fillStyle = "white"
+                        ctx.fill();
+
+                        ctx.beginPath();
+                        ctx.arc(230, 140, 4, Math.PI * 0, Math.PI * 2, true);
+                        ctx.fillStyle = "white"
+                        ctx.fill();
+
+                        ctx.beginPath();
+                        ctx.arc(210, 100, 4, Math.PI * 0, Math.PI * 2, true);
+                        ctx.fillStyle = "white"
+                        ctx.fill();
+
+                        ctx.beginPath();
+                        ctx.arc(195, 105, 4, Math.PI * 0, Math.PI * 2, true);
+                        ctx.fillStyle = "white"
+                        ctx.fill();
+
+                        ctx.beginPath();
+                        ctx.arc(160, 90, 4, Math.PI * 0, Math.PI * 2, true);
+                        ctx.fillStyle = "white"
+                        ctx.fill();
+
+                        ctx.beginPath();
+                        ctx.arc(225, 90, 4, Math.PI * 0, Math.PI * 2, true);
+                        ctx.fillStyle = "white"
+                        ctx.fill();
+
+                        ctx.beginPath();
+                        ctx.arc(265, 130, 4, Math.PI * 0, Math.PI * 2, true);
+                        ctx.fillStyle = "white"
+                        ctx.fill();
+
+                        ctx.beginPath();
+                        ctx.arc(280, 70, 8, Math.PI * 0, Math.PI * 2, true);
+                        ctx.fillStyle = "white"
+                        ctx.fill();
+
+                        ctx.beginPath();
+                        ctx.arc(290, 160, 4, Math.PI * 0, Math.PI * 2, true);
+                        ctx.fillStyle = "white"
+                        ctx.fill();
+
+                        ctx.beginPath();
+                        ctx.arc(285, 190, 4, Math.PI * 0, Math.PI * 2, true);
+                        ctx.fillStyle = "white"
+                        ctx.fill();
+
+                        ctx.beginPath();
+                        ctx.arc(300, 210, 5, Math.PI * 0, Math.PI * 2, true);
+                        ctx.fillStyle = "white"
+                        ctx.fill();
+
+                        ctx.beginPath();
+                        ctx.arc(330, 160, 4, Math.PI * 0, Math.PI * 2, true);
+                        ctx.fillStyle = "white"
+                        ctx.fill();
+
+                        ctx.beginPath();
+                        ctx.arc(360, 130, 8, Math.PI * 0, Math.PI * 2, true);
+                        ctx.fillStyle = "white"
+                        ctx.fill();
+                    </script>
+                </canvas>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

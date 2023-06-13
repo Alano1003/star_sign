@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>星星知希</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            background-image: url(./assests/background2.jpg);
+            background-size: auto 300vh;
+            position: absolute;
+        }
+        .logo img{
+            width: 300px;
+            height: 300px;
+            transform: translateX(+620px) translateY(+200px);
+            /* position: relative; */
+        }
+        .logo img:hover{
+            width: 310px;
+            height: 310px;
+            opacity: 0.75;
+            transition: 1.5s;
+        }
+
+        button{
+            background-color: transparent;
+            box-sizing: border-box;
+            border: none;
+            /* border: 1px solid white; */
+            /* border-radius: 10px; */
+            padding: 10px;
+            font-size: 24px;
+            /* margin: 10px; */
+        }
+        .member{
+            transform: translateX(+715px) translateY(+230px);
+            text-align: center;
+            /* position: relative; */
+        }
+        .member a{
+            color: white;
+            text-decoration: none;
+        }
+        .member a:hover {
+            color: gold;
+            /* width: 73%; */
+        }
+    </style>
+</head>
+<body>
+    <div class="logo">
+        <a href="start.html"><img src="./assests/logo.png" alt=""></a>
+    </div>
+    <div>
+        <button class="member"><a href="member.html">member</a></button>
+    </div>
+
+</body>
+</html>

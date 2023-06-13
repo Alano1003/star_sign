@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>星星知希 – 獅子座 Leo</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        body {
+            background-image: url(./assests/background2.jpg);
+            background-size: auto 300vh;
+            height: 100vh;
+            width: 100%;
+        }
+        header{
+            height: 90px;
+            width: 100%;
+        }
+        main{
+            width: 100%;
+            height: 1500px;
+        }
+        .container{
+            /* padding: 30px; */
+            margin: 30px;
+            width: 90%;
+            display: grid;
+            grid-template-rows: 400px 500px 550px;
+            grid-auto-columns: 100%;
+            justify-content: center;
+            /* background-color: black; */
+            gap: 10px;
+            
+        }
+        .item{
+            width: 100%;
+            background-color: rgba(240, 248, 255, 0.1);
+            border: 1px solid grey;
+            border-radius: 5px 5px 5px 5px;
+            justify-content: center;
+            padding: 30px;
+            text-align: center;
+        }
+
+        button{
+                background-color: transparent;
+                box-sizing: border-box;
+                border: none;
+                font-size: 30px;
+                margin: 10px;
+        }
+        
+        header a{
+            color: white;
+            text-decoration-line: none;
+        }
+
+        #logo img {
+            width: 100px;
+            height: 100px;
+            margin-top: 5px;
+            margin-left: 10px;
+            position: relative;
+        }
+        #logo img:hover{
+            width: 105px;
+            height: 105px;
+            opacity: 1;
+            transition: 1s;
+        }
+        #logo{
+            float: left;
+            width: 10%;
+        }
+
+        #menu{
+            float: right;
+            text-align: center;
+            padding-right: 30px;
+            margin-top: 25px;
+        }
+        .story{
+            color: white;
+            padding-right: 40px;
+            text-decoration: none;
+        }
+        .story a:hover {
+            color: gold;
+            /* color: rgb(2, 23, 119); */
+            /* width: 73%; */
+        }
+
+        .role{
+            color: white;
+            margin-right: 50px;
+            text-decoration: none;
+        }
+        .role a:hover{
+            color: gold;
+        }
+
+        .draw{
+            color: white;
+            margin-right: 80px;
+            text-decoration: none;
+        }
+        .draw a:hover{
+            color: gold;
+            
+        }
+        #story p{
+            color: white;
+        }
+        #role p{
+            color: white;
+        }
+        h1,p {
+            color: white;
+        }
+        /* canvas{
+            
+            display: block;
+            border: 1px solid darkgray;
+        } */
+    </style>
+</head>
+
+<body>
+       
+    <header>
+        <div id="logo">
+            <a href="start.html"><img src="./assests/logo.png" alt=""></a>
+        </div>
+        <div id="menu">
+            <button class="story"><a href="#story">story</a></button>
+            <button class="role"><a href="#role">role</a></button>
+            <button class="draw"><a href="#draw">draw</a></button>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="item" id="story">
+                <h1>STORY</h1></br>
+                <br><p>在古希臘神話中，獅子座的故事與一位強大的半神半人英雄赫拉克勒斯（Hercules）有關。</p>
+                <br><p>赫拉克勒斯完成了許多艱難的任務和冒險。其中一項任務是在他的第一個勞動中，他必須與一隻無法傷害的獅子進行戰鬥。</p>
+                <br><p>這隻獅子是由赫拉（Hera），宙斯（Zeus）的妻子和赫拉克勒斯的宿敵所創造的。這隻獅子被稱為涅門（Nemean Lion），它的皮膚堅硬無比，無法被傳統的武器傷害。</p>
+                <br><p>赫拉克勒斯與涅門展開激烈的戰鬥，他利用他的巨大力量和勇氣，運用智慧，找到了一個擊敗涅門的方法。</p>
+                <br><p>他用自己的手臂抓住了涅門的強壯頸項，並用自己的力量扭斷了涅門的脖子，將它擊敗。隨著涅門被打敗，赫拉克勒斯將它的皮膚剝下，用作自己的盔甲，成為了他的象徵。</p>
+                <br><p>他完成了第一個勞動，並開始了他的傳說般的冒險之旅，成為了古希臘神話中最著名的英雄之一。</p>
+            </div>
+
+            <div class="item" id="role">
+                <h1>ROLE</h1></br>
+                <img src="assests/1587105363-1954447357_n.jpg" width="300px" height="300px" alt="">
+                <br><br><p>圖為半神半人英雄赫拉克勒斯（Hercules）</p>
+            </div>
+            <div class="item" id="draw">
+                <h1>DRAW</h1></br>
+                <canvas id="aaa" width=400 height="400"></canvas>
+                <script>
+                   const canvas = document.getElementById('aaa');
+                   const ctx = canvas.getContext('2d');
+                //    canvas.height = 400;
+
+                   ctx.beginPath();
+                //    ctx.fillStyle = ' rgba(240, 248, 255, 0.1)'
+                //    ctx.fillRect(0,0,400,400);
+                //    ctx.lineWidth = 15;
+                   ctx.strokeStyle = " rgba(240, 248, 255, 0.1)";
+                   ctx.strokeRect(0,0,400,400);
+                   ctx.stroke();
+
+                   ctx.beginPath();
+                   ctx.arc(250,100,5,Math.PI*0,Math.PI/2*10000);
+                   ctx.lineWidth = 2;
+                   ctx.fillStyle = "gold";
+                   ctx.fill();
+                   ctx.strokeStyle = "yellow";
+                   ctx.stroke();
+
+                   ctx.beginPath();
+                   ctx.moveTo(250,100);
+                   ctx.lineTo(200,110);
+                   ctx.stroke();
+
+                   ctx.beginPath();
+                   ctx.arc(200,110,5,Math.PI*0,Math.PI/2*10000);
+                   ctx.lineWidth = 2;
+                   ctx.fillStyle = "gold";
+                   ctx.fill();
+                   ctx.strokeStyle = "yellow";
+                   ctx.stroke();
+
+                   ctx.beginPath();
+                   ctx.moveTo(200,110);
+                   ctx.lineTo(197,170);
+                   ctx.stroke();
+
+                   ctx.beginPath();
+                   ctx.arc(197,170,5,Math.PI*0,Math.PI/2*10000);
+                   ctx.lineWidth = 2;
+                   ctx.fillStyle = "gold";
+                   ctx.fill();
+                   ctx.strokeStyle = "yellow";
+                   ctx.stroke();
+
+                   ctx.beginPath();
+                   ctx.moveTo(197,170);
+                   ctx.lineTo(230,210);
+                   ctx.stroke();
+
+                   ctx.beginPath();
+                   ctx.arc(230,210,5,Math.PI*0,Math.PI/2*10000);
+                   ctx.lineWidth = 2;
+                   ctx.fillStyle = "gold";
+                   ctx.fill();
+                   ctx.strokeStyle = "yellow";
+                   ctx.stroke();
+                   
+                   ctx.beginPath();
+                   ctx.moveTo(230,210);
+                   ctx.lineTo(260,210);
+                   ctx.stroke();
+
+                   ctx.beginPath();
+                   ctx.arc(260,210,5,Math.PI*0,Math.PI/2*10000);
+                   ctx.lineWidth = 2;
+                   ctx.fillStyle = "gold";
+                   ctx.fill();
+                   ctx.strokeStyle = "yellow";
+                   ctx.stroke();
+
+                   ctx.beginPath();
+                   ctx.moveTo(260,210);
+                   ctx.lineTo(280,240);
+                   ctx.stroke();
+
+                   ctx.beginPath();
+                   ctx.arc(280,240,5,Math.PI*0,Math.PI/2*10000);
+                   ctx.lineWidth = 2;
+                   ctx.fillStyle = "gold";
+                   ctx.fill();
+                   ctx.strokeStyle = "yellow";
+                   ctx.stroke();
+
+                   ctx.beginPath();
+                   ctx.moveTo(280,240);
+                   ctx.lineTo(180,300);
+                   ctx.stroke();
+
+                   ctx.beginPath();
+                   ctx.arc(180,300,5,Math.PI*0,Math.PI/2*10000);
+                   ctx.lineWidth = 2;
+                   ctx.fillStyle = "gold";
+                   ctx.fill();
+                   ctx.strokeStyle = "yellow";
+                   ctx.stroke();
+
+                   ctx.beginPath();
+                   ctx.moveTo(180,300);
+                   ctx.lineTo(140,340);
+                   ctx.stroke();
+
+                   ctx.beginPath();
+                   ctx.arc(140,340,5,Math.PI*0,Math.PI/2*10000);
+                   ctx.lineWidth = 2;
+                   ctx.fillStyle = "gold";
+                   ctx.fill();
+                   ctx.strokeStyle = "yellow";
+                   ctx.stroke();
+
+                   ctx.beginPath();
+                   ctx.moveTo(140,340);
+                   ctx.lineTo(130,270);
+                   ctx.stroke();
+
+                   ctx.beginPath();
+                   ctx.arc(130,270,5,Math.PI*0,Math.PI/2*10000);
+                   ctx.lineWidth = 2;
+                   ctx.fillStyle = "gold";
+                   ctx.fill();
+                   ctx.strokeStyle = "yellow";
+                   ctx.stroke();
+
+                   ctx.beginPath();
+                   ctx.moveTo(130,270);
+                   ctx.lineTo(230,210);
+                   ctx.stroke();
+
+                </script>
+
+                   
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

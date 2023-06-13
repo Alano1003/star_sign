@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>星星知希 – 天秤座 Libra</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            background-image: url(./assests/background2.jpg);
+            background-size: auto 300vh;
+            height: 100vh;
+            width: 100%;
+        }
+
+        header {
+            height: 90px;
+            width: 100%;
+        }
+
+        main {
+            width: 100%;
+            height: 1500px;
+        }
+
+        .container {
+            /* padding: 30px; */
+            margin: 30px;
+            width: 90%;
+            display: grid;
+            grid-template-rows: repeat(3, 500px);
+            grid-auto-columns: 100%;
+            justify-content: center;
+            /* background-color: black; */
+            gap: 10px;
+
+        }
+
+        .item {
+            width: 100%;
+            background-color: rgba(240, 248, 255, 0.1);
+            border: 1px solid grey;
+            border-radius: 5px 5px 5px 5px;
+            justify-content: center;
+            padding: 30px;
+            text-align: center;
+        }
+
+        button {
+            background-color: transparent;
+            box-sizing: border-box;
+            border: none;
+            font-size: 30px;
+            margin: 10px;
+        }
+
+        header a {
+            color: white;
+            text-decoration-line: none;
+        }
+
+        #logo img {
+            width: 100px;
+            height: 100px;
+            margin-top: 5px;
+            margin-left: 10px;
+            position: relative;
+        }
+
+        #logo img:hover {
+            width: 105px;
+            height: 105px;
+            opacity: 1;
+            transition: 1s;
+        }
+
+        #logo {
+            float: left;
+            width: 10%;
+        }
+
+        #menu {
+            float: right;
+            text-align: center;
+            padding-right: 30px;
+            margin-top: 25px;
+        }
+
+        .story {
+            color: white;
+            padding-right: 40px;
+            text-decoration: none;
+        }
+
+        .story a:hover {
+            color: gold;
+            /* width: 73%; */
+        }
+
+        .role {
+            color: white;
+            margin-right: 50px;
+            text-decoration: none;
+        }
+
+        .role a:hover {
+            color: gold;
+        }
+
+        .draw {
+            color: white;
+            margin-right: 80px;
+            text-decoration: none;
+        }
+
+        .draw a:hover {
+            color: gold;
+        }
+
+        #story p {
+            color: white;
+        }
+
+        #role p {
+            color: white;
+        }
+
+        h1,
+        h3,
+        p {
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div id="logo">
+            <a href="start.html"><img src="./assests/logo.png" alt=""></a>
+        </div>
+        <div id="menu">
+            <button class="story"><a href="#story">story</a></button>
+            <button class="role"><a href="#role">role</a></button>
+            <button class="draw"><a href="#draw">draw</a></button>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="item" id="story">
+                <h1>STORY</h1></br><br>
+                <p>天秤座是希臘神話中的正義女神阿斯特莉亞在為人類所做善惡裁判時所用的天平，</p><br>
+                <p>阿斯特莉亞一隻手持天平，一隻手握斬除邪惡的劍。為求公正，所以眼睛皆矇著。</p><br>
+                <p>從前的眾神和人類是和平共處於大地上，神雖擁有永遠的生命，但人類壽命有限。</p><br>
+                <p>因此寂寞的神只有不斷創造人類，然而那時的人好爭鬥，惡業橫行，眾神在對人類失望之餘回到天上。</p><br>
+                <p>只有阿斯特莉亞女神捨不得回去而留在世界上，教人為善。</p><br>
+                <p>儘管如此，人類仍繼續墮落，於是戰爭掀起，開始了打打殺殺，</p><br>
+                <p>最後連阿斯特莉亞也放棄人類而回到天上。而天空就高掛著鍾愛正義和平公正的天秤座。</p><br>
+            </div>
+            <div class="item" id="role">
+                <h1>ROLE</h1></br>
+                <img src="./assests/Libra01.jpg" alt="正義女神阿斯特莉亞 (Astraea)" width="10%">
+                <p>
+                <h3><b>正義女神 — 阿斯特莉亞 (Astraea)</b></h3>
+                </p><br>
+                <p>掌管正義，父親是天神宙斯(Zeus)，母親是泰美斯(Themis)。</p><br>
+                <p>一隻手提著代表公正的天平，另一隻手握著揮刀向惡的寶劍。</p><br>
+                <p>她的眼睛被蒙上，預示著她將不會受到旁人的左右，以「絕對公平」的方式來定奪善惡。</p><br>
+            </div>
+            <div class="item" id="draw">
+                <h1>DRAW</h1>
+                <canvas id="myCanvas" height="500" width="500">
+                    <script>
+                        const canvas = document.getElementById("myCanvas");
+                        const ctx = canvas.getContext("2d");
+
+                        ctx.beginPath();
+                        ctx.moveTo(120, 250)
+                        ctx.lineTo(190, 180)
+                        ctx.lineTo(180, 110)
+                        ctx.lineTo(320, 120)
+                        ctx.lineTo(350, 200)
+                        ctx.lineTo(310, 290)
+                        ctx.lineTo(330, 310)
+
+                        ctx.moveTo(180, 110)
+                        ctx.lineTo(350, 200)
+                        // ctx.lineTo()
+                        ctx.strokeStyle = "aliceblue"
+                        // ctx.closePath()
+                        ctx.stroke()
+
+                        ctx.beginPath();
+                        ctx.arc(120, 250, 4, Math.PI * 0, Math.PI * 2, true);
+                        ctx.fillStyle = "white"
+                        ctx.fill();
+
+                        ctx.beginPath();
+                        ctx.arc(190, 180, 4, Math.PI * 0, Math.PI * 2, true);
+                        ctx.fillStyle = "white"
+                        ctx.fill();
+
+                        ctx.beginPath();
+                        ctx.arc(180, 110, 8, Math.PI * 0, Math.PI * 2, true);
+                        ctx.fillStyle = "white"
+                        ctx.fill();
+
+                        ctx.beginPath();
+                        ctx.arc(320, 120, 5, Math.PI * 0, Math.PI * 2, true);
+                        ctx.fillStyle = "white"
+                        ctx.fill();
+
+                        ctx.beginPath();
+                        ctx.arc(350, 200, 8, Math.PI * 0, Math.PI * 2, true);
+                        ctx.fillStyle = "white"
+                        ctx.fill();
+
+                        ctx.beginPath();
+                        ctx.arc(310, 290, 5, Math.PI * 0, Math.PI * 2, true);
+                        ctx.fillStyle = "white"
+                        ctx.fill();
+
+                        ctx.beginPath();
+                        ctx.arc(330, 310, 4, Math.PI * 0, Math.PI * 2, true);
+                        ctx.fillStyle = "white"
+                        ctx.fill();
+                    </script>
+                </canvas>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

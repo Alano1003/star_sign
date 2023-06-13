@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>星星知希 – 雙魚座 Pisces</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            background-image: url(./picturec/background2.jpg);
+            background-size: auto 300vh;
+            height: 100vh;
+            width: 100%;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+/* 
+        header {
+            height: 90px;
+            width: 100%;
+        } */
+
+        header {
+            height: 90px;
+            width: 100%;
+            /* background-color: rgba(0, 0, 0, 0.9); */
+            /* position: sticky; */
+            /* top: 0; */
+        }
+
+        main {
+            width: 100%;
+            height: 1500px;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .container {
+            /* padding: 30px; */
+            margin: 30px;
+            width: 90%;
+
+            /* display: grid;
+            grid-template-rows: repeat(3, 500px);
+            grid-auto-columns: 100%;
+            justify-content: center; */
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+
+            /* background-color: black; */
+            gap: 10px;
+
+        }
+
+        .item {
+            width: 100%;
+            height: max-content;
+            background-color: rgba(240, 248, 255, 0.1);
+            border: 1px solid grey;
+            border-radius: 5px;
+            justify-content: center;
+            padding: 30px;
+            text-align: center;
+
+            line-height: 3rem;
+        }
+
+        button {
+            background-color: transparent;
+            box-sizing: border-box;
+            border: none;
+            font-size: 30px;
+            margin: 10px;
+        }
+
+        header a {
+            color: white;
+            text-decoration-line: none;
+        }
+
+        #logo img {
+            width: 100px;
+            height: 100px;
+            margin-top: 5px;
+            margin-left: 10px;
+            position: relative;
+        }
+
+        #logo img:hover {
+            width: 105px;
+            height: 105px;
+            opacity: 1;
+            transition: 1s;
+        }
+
+        #logo {
+            float: left;
+            width: 10%;
+        }
+
+        #menu {
+            float: right;
+            text-align: center;
+            padding-right: 30px;
+            margin-top: 25px;
+        }
+
+        .story {
+            color: white;
+            padding-right: 40px;
+            text-decoration: none;
+        }
+
+        .story a:hover {
+            color: gold;
+            /* width: 73%; */
+        }
+
+        .role {
+            color: white;
+            margin-right: 50px;
+            text-decoration: none;
+        }
+
+        .RoleImg {
+            object-fit: cover;
+            padding: 2%;
+        }
+
+        .role a:hover {
+            color: gold;
+        }
+
+        .draw {
+            color: white;
+            margin-right: 80px;
+            text-decoration: none;
+        }
+
+        .draw a:hover {
+            color: gold;
+        }
+
+        h1,
+        p {
+            color: rgba(240, 248, 255, 1);
+        }
+
+        h1{
+            /* font-size: 3rem; */
+            padding: 2%;
+        }
+
+        #myCanvas{   
+            margin-left: 20%;
+        }
+        #role p{
+            text-align: left;
+            padding-left: 280px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div id="logo">
+            <a href="start.html"><img src="./picturec/logo.png" alt=""></a>
+        </div>
+        <div id="menu">
+            <button class="story"><a href="#story">story</a></button>
+            <button class="role"><a href="#role">role</a></button>
+            <button class="draw"><a href="#draw">draw</a></button>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+
+            <div class="item" id="story">
+                <h1>STORY</h1>
+                <p>傳說在遠古時代，奧林匹斯山上搞了一次神的聚會，特別熱鬧，忽然間，天空巨變，</p>
+                <p>來了一隻超級怪物，由於怪物實力強悍，眾神都變化成動物跑路了。</p>
+                <p>而美神維納斯一看情形不對，立馬拉著愛神丘比特化身成魚，跳入水中，</p>
+                <p>為了避免走散，維納斯還扯下衣服綁著丘比特的尾巴。</p>
+                <p>母子倆就這樣以尾巴相連，在水中逃走。</p>
+                <p>事後宙斯將阿佛洛狄忒首先化身的魚提升到空中成為南魚座，而她和厄洛斯化身的綁在一起的兩條魚則稱為雙魚座。</p>
+                <p>而她和厄洛斯化身的綁在一起的兩條魚則稱為雙魚座。</p>
+            </div>
+
+            <div class="item" id="role">
+                <h1>ROLE</h1>
+                <img src="./picturec/300px-NAMA_Aphrodite_Syracuse.jpg" width="300px" height="300px" alt="" class="RoleImg"><img src="./picturec/Eros_Farnese_MAN_Napoli_6353.jpg" width="300px" height="300px" alt="" class="RoleImg">
+                <p>阿佛洛狄忒（希臘語：Ἀφροδίτη，羅馬化：Aphrodítē）&emsp;&emsp;厄洛斯（Eros，希臘語：Ἔρως）</p>
+            </div>
+
+            <div class="item" id="draw">
+                <h1>DRAW</h1>
+                <canvas id="myCanvas" height="650" width="800"></canvas>
+            </div>
+
+            <script>
+                const canvas = document.getElementById("myCanvas");
+                const ctx = canvas.getContext("2d");
+        
+                ctx.beginPath();
+                ctx.moveTo(200,160)
+                ctx.lineTo(160,200)
+                ctx.lineTo(175,360)
+                ctx.lineTo(145,420)
+                ctx.lineTo(143,465)
+                ctx.lineTo(100,600)
+                ctx.lineTo(160,565)
+                ctx.lineTo(210,560)
+                ctx.lineTo(260,565)
+                ctx.lineTo(370,530)
+                ctx.lineTo(430,480)
+                ctx.lineTo(470,500)
+                ctx.lineTo(455,530)
+                ctx.lineTo(425,560)
+                ctx.lineTo(370,530)
+                ctx.strokeStyle = "aliceblue"
+                // ctx.closePath()
+                ctx.stroke()
+        
+                ctx.beginPath();
+                ctx.arc(200,160, 4, Math.PI*0, Math.PI*2, true);
+                ctx.fillStyle = "white"
+                ctx.fill();
+        
+                ctx.beginPath();
+                ctx.arc(160,200, 4, Math.PI*0, Math.PI*2, true);
+                ctx.fillStyle = "white"
+                ctx.fill();
+        
+                ctx.beginPath();
+                ctx.arc(143,465, 4, Math.PI*0, Math.PI*2, true);
+                ctx.fillStyle = "white"
+                ctx.fill();
+        
+                ctx.beginPath();
+                ctx.arc(175,360, 4, Math.PI*0, Math.PI*2, true);
+                ctx.fillStyle = "white"
+                ctx.fill();
+        
+                ctx.beginPath();
+                ctx.arc(145,420, 4, Math.PI*0, Math.PI*2, true);
+                ctx.fillStyle = "white"
+                ctx.fill();
+        
+                ctx.beginPath();
+                ctx.arc(160,565, 4, Math.PI*0, Math.PI*2, true);
+                ctx.fillStyle = "white"
+                ctx.fill();
+        
+                ctx.beginPath();
+                ctx.arc(210,560, 4, Math.PI*0, Math.PI*2, true);
+                ctx.fillStyle = "white"
+                ctx.fill();
+        
+                ctx.beginPath();
+                ctx.arc(100,600, 4, Math.PI*0, Math.PI*2, true);
+                ctx.fillStyle = "white"
+                ctx.fill();
+        
+                ctx.beginPath();
+                ctx.arc(260,565, 4, Math.PI*0, Math.PI*2, true);
+                ctx.fillStyle = "white"
+                ctx.fill();
+        
+                ctx.beginPath();
+                ctx.arc(430,480, 4, Math.PI*0, Math.PI*2, true);
+                ctx.fillStyle = "white"
+                ctx.fill();
+        
+                ctx.beginPath();
+                ctx.arc(470,500, 4, Math.PI*0, Math.PI*2, true);
+                ctx.fillStyle = "white"
+                ctx.fill();
+        
+                ctx.beginPath();
+                ctx.arc(455,530, 4, Math.PI*0, Math.PI*2, true);
+                ctx.fillStyle = "white"
+                ctx.fill();
+        
+                ctx.beginPath();
+                ctx.arc(425,560, 4, Math.PI*0, Math.PI*2, true);
+                ctx.fillStyle = "white"
+                ctx.fill();
+        
+                ctx.beginPath();
+                ctx.arc(370,530, 4, Math.PI*0, Math.PI*2, true);
+                ctx.fillStyle = "white"
+                ctx.fill();
+            </script>
+
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>星星知希 – 水瓶座 Aquarius</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            background-image: url(./picturec/background2.jpg);
+            background-size: auto 300vh;
+            height: 100vh;
+            width: 100%;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        /* 
+        header {
+            height: 90px;
+            width: 100%;
+        } */
+
+        header {
+            height: 90px;
+            width: 100%;
+            /* background-color: rgba(0, 0, 0, 0.9); */
+            /* background-image: url(./picturec/background2.jpg); */
+            /* position: sticky; */
+            /* top: 0; */
+        }
+
+        main {
+            width: 100%;
+            height: 1500px;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .container {
+            /* padding: 30px; */
+            margin: 30px;
+            width: 90%;
+
+            /* display: grid;
+            grid-template-rows: repeat(3, 500px);
+            grid-auto-columns: 100%;
+            justify-content: center; */
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+
+            /* background-color: black; */
+            gap: 10px;
+
+        }
+
+        .item {
+            width: 100%;
+            height: max-content;
+            background-color: rgba(240, 248, 255, 0.1);
+            border: 1px solid grey;
+            border-radius: 5px;
+            justify-content: center;
+            padding: 30px;
+            text-align: center;
+
+            line-height: 3rem;
+        }
+
+        button {
+            background-color: transparent;
+            box-sizing: border-box;
+            border: none;
+            font-size: 30px;
+            margin: 10px;
+        }
+
+        header a {
+            color: white;
+            text-decoration-line: none;
+        }
+
+        #logo img {
+            width: 100px;
+            height: 100px;
+            margin-top: 5px;
+            margin-left: 10px;
+            position: relative;
+        }
+
+        #logo img:hover {
+            width: 105px;
+            height: 105px;
+            opacity: 1;
+            transition: 1s;
+        }
+
+        #logo {
+            float: left;
+            width: 10%;
+        }
+
+        #menu {
+            float: right;
+            text-align: center;
+            padding-right: 30px;
+            margin-top: 25px;
+        }
+
+        .story {
+            color: white;
+            padding-right: 40px;
+            text-decoration: none;
+        }
+
+        .story a:hover {
+            color: gold;
+            /* width: 73%; */
+        }
+
+        .role {
+            color: white;
+            margin-right: 50px;
+            text-decoration: none;
+        }
+
+        .RoleImg {
+            object-fit: cover;
+            padding: 2%;
+        }
+
+        .role a:hover {
+            color: gold;
+        }
+
+        .draw {
+            color: white;
+            margin-right: 80px;
+            text-decoration: none;
+        }
+
+        .draw a:hover {
+            color: gold;
+        }
+
+        h1,
+        p {
+            color: rgba(240, 248, 255, 1);
+        }
+
+        h1 {
+            /* font-size: 3rem; */
+            padding: 2%;
+        }
+
+        #myCanvas {
+            margin-top: 15%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div id="logo">
+            <a href="start.html"><img src="./picturec/logo.png" alt=""></a>
+        </div>
+        <div id="menu">
+            <button class="story"><a href="#story">story</a></button>
+            <button class="role"><a href="#role">role</a></button>
+            <button class="draw"><a href="#draw">draw</a></button>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+
+            <div class="item" id="story">
+                <h1>STORY</h1>
+                <p>青春女神赫柏是宙斯和赫拉的女兒，她被父親指派來擔任奧林匹斯眾神筵席中招待和倒酒的職務。</p>
+                <p>後來赫柏被赫拉許配給大力神赫拉克勒斯，所以侍酒得職務便一直空著，</p>
+                <p>聖山上的宴席也無人搭理，使得宙斯傷透了腦筋。後來宙斯在天界巡遊的時候，</p>
+                <p>看上了一個年輕英俊的特洛伊王子甘尼美德，他有著金色的頭髮，唇紅齒白。</p>
+                <p>眾神們也一致同意由他來擔任侍酒一職宙斯便派使者前去邀請，</p>
+                <p>但甘尼美德生性愛好自由、浪蕩不羈，說什麼也不肯答應。宙斯知道後大發雷霆，</p>
+                <p>化身一直巨鷹，親自將甘尼美德抓上了奧林匹斯山，甘尼美德在不得已的情況下，</p>
+                <p>只好勉強擔任了侍者的工作，但是他對故鄉、親人、自由的思戀，讓他每天都活在痛苦中。</p>
+                <p>後來宙斯對他產生了同情，讓他在每年的一月到二月可以回到親人身邊，而他用來倒酒的寶瓶，也被宙斯升到空中成為水瓶座。</p>
+            </div>
+
+            <div class="item" id="role">
+                <h1>ROLE</h1>
+                <img src="./picturec/330px-Peter_Paul_Rubens_-_The_Rape_of_Ganymede,_1636-1638.jpg" width="300px"
+                    height="300px" alt="" class="RoleImg">
+                <p>蓋尼米德（古希臘語：Γανυμήδης）</p>
+            </div>
+
+            <div class="item" id="draw">
+                <h1>DRAW</h1>
+                <canvas id="myCanvas" height="650" width="800">
+                    <script>
+                        const canvas = document.getElementById("myCanvas");
+                        const ctx = canvas.getContext("2d");
+
+                        ctx.beginPath();
+                        ctx.moveTo(570, 80)
+                        ctx.lineTo(450, 175)
+                        ctx.lineTo(330, 245)
+                        ctx.lineTo(440, 335)
+                        ctx.lineTo(520, 328)
+                        ctx.lineTo(440, 335)
+                        ctx.lineTo(330, 245)
+                        ctx.lineTo(340, 330)
+                        ctx.lineTo(280, 320)
+                        ctx.lineTo(283, 370)
+                        ctx.lineTo(360, 470)
+                        ctx.lineTo(380, 415)
+                        ctx.lineTo(435, 420)
+                        ctx.lineTo(475, 465)
+                        ctx.lineTo(520, 510)
+                        // ctx.lineTo()
+                        ctx.strokeStyle = "aliceblue"
+                        // ctx.closePath()
+                        ctx.stroke()
+
+                        ctx.beginPath();
+                        ctx.arc(570, 80, 4, Math.PI * 0, Math.PI * 2, true);
+                        ctx.fillStyle = "white"
+                        ctx.fill();
+
+                        ctx.beginPath();
+                        ctx.arc(450, 175, 4, Math.PI * 0, Math.PI * 2, true);
+                        ctx.fillStyle = "white"
+                        ctx.fill();
+
+                        ctx.beginPath();
+                        ctx.arc(330, 245, 4, Math.PI * 0, Math.PI * 2, true);
+                        ctx.fillStyle = "white"
+                        ctx.fill();
+
+                        ctx.beginPath();
+                        ctx.arc(440, 335, 4, Math.PI * 0, Math.PI * 2, true);
+                        ctx.fillStyle = "white"
+                        ctx.fill();
+
+                        ctx.beginPath();
+                        ctx.arc(520, 328, 4, Math.PI * 0, Math.PI * 2, true);
+                        ctx.fillStyle = "white"
+                        ctx.fill();
+
+                        ctx.beginPath();
+                        ctx.arc(340, 330, 4, Math.PI * 0, Math.PI * 2, true);
+                        ctx.fillStyle = "white"
+                        ctx.fill();
+
+                        ctx.beginPath();
+                        ctx.arc(280, 320, 4, Math.PI * 0, Math.PI * 2, true);
+                        ctx.fillStyle = "white"
+                        ctx.fill();
+
+                        ctx.beginPath();
+                        ctx.arc(283, 370, 4, Math.PI * 0, Math.PI * 2, true);
+                        ctx.fillStyle = "white"
+                        ctx.fill();
+
+                        ctx.beginPath();
+                        ctx.arc(360, 470, 4, Math.PI * 0, Math.PI * 2, true);
+                        ctx.fillStyle = "white"
+                        ctx.fill();
+
+                        ctx.beginPath();
+                        ctx.arc(380, 415, 4, Math.PI * 0, Math.PI * 2, true);
+                        ctx.fillStyle = "white"
+                        ctx.fill();
+
+                        ctx.beginPath();
+                        ctx.arc(435, 420, 4, Math.PI * 0, Math.PI * 2, true);
+                        ctx.fillStyle = "white"
+                        ctx.fill();
+
+                        ctx.beginPath();
+                        ctx.arc(475, 465, 4, Math.PI * 0, Math.PI * 2, true);
+                        ctx.fillStyle = "white"
+                        ctx.fill();
+
+                        ctx.beginPath();
+                        ctx.arc(520, 510, 4, Math.PI * 0, Math.PI * 2, true);
+                        ctx.fillStyle = "white"
+                        ctx.fill();
+                    </script>
+                </canvas>
+            </div>
+    </main>
+</body>
+
+</html>

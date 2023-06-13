@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>星星知希 – 處女座 Virgo</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        body {
+            background-image: url(./assests/background2.jpg);
+            background-size: auto 300vh;
+            height: 100vh;
+            width: 100%;
+        }
+        header{
+            height: 90px;
+            width: 100%;
+        }
+        main{
+            width: 100%;
+            height: 1500px;
+        }
+        .container{
+            /* padding: 30px; */
+            margin: 30px;
+            width: 90%;
+            display: grid;
+            grid-template-rows: 450px 500px 500px;
+            grid-auto-columns: 100%;
+            justify-content: center;
+            /* background-color: black; */
+            gap: 10px;
+            
+        }
+        .item{
+            width: 100%;
+            background-color: rgba(240, 248, 255, 0.1);
+            border: 1px solid grey;
+            border-radius: 5px 5px 5px 5px;
+            justify-content: center;
+            padding: 30px;
+            text-align: center;
+        }
+
+        button{
+                background-color: transparent;
+                box-sizing: border-box;
+                border: none;
+                font-size: 30px;
+                margin: 10px;
+        }
+        
+        header a{
+            color: white;
+            text-decoration-line: none;
+        }
+
+        #logo img {
+            width: 100px;
+            height: 100px;
+            margin-top: 5px;
+            margin-left: 10px;
+            position: relative;
+        }
+        #logo img:hover{
+            width: 105px;
+            height: 105px;
+            opacity: 1;
+            transition: 1s;
+        }
+        #logo{
+            float: left;
+            width: 10%;
+        }
+
+        #menu{
+            float: right;
+            text-align: center;
+            padding-right: 30px;
+            margin-top: 25px;
+        }
+        .story{
+            color: white;
+            padding-right: 40px;
+            text-decoration: none;
+        }
+        .story a:hover {
+            color: gold;
+            /* width: 73%; */
+        }
+
+        .role{
+            color: white;
+            margin-right: 50px;
+            text-decoration: none;
+        }
+        .role a:hover{
+            color: gold;
+        }
+
+        .draw{
+            color: white;
+            margin-right: 80px;
+            text-decoration: none;
+        }
+        .draw a:hover{
+            color: gold;
+        }
+        #story p{
+            color: white;
+        }
+        #role p{
+            color: white;
+        }
+        h1,p {
+            color: white;
+        }
+        /* canvas{
+            
+            display: block;
+            border: 1px solid darkgray;
+        } */
+    </style>
+</head>
+
+<body>
+  
+    <header>
+        <div id="logo">
+            <a href="start.html"><img src="./assests/logo.png" alt=""></a>
+        </div>
+        <div id="menu">
+            <button class="story"><a href="#story">story</a></button>
+            <button class="role"><a href="#role">role</a></button>
+            <button class="draw"><a href="#draw">draw</a></button>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="item" id="story">
+                <h1>STORY</h1></br>
+                <br><p>在希臘神話中，處女座的故事與宙斯（Zeus）和萊托（Leto）的女兒阿特蜜斯（Artemis）有關，她是月亮、狩獵和野生動物的女神。</p>
+                <br><p>阿特蜜斯通常被描繪成一位年輕的女獵人，手持弓箭和箭袋，駕著一輛由鹿拉著的銀色戰車。</p>
+                <br><p>阿特蜜斯經常與她的伴女一起狩獵，她們是一群由女性組成的神秘隨扈，擁有強大的狩獵技能。</p>
+                <br><p>阿特蜜斯也是貞潔和純潔的女神，她保持著她的處女之身，並保護著女性和婦女的權益。</p>
+                <br><p>有一個與阿特蜜斯相關的故事是關於她與獵人阿克塞俄斯（Actaeon）的相遇。</p>
+                <br><p>阿克塞俄斯意外地看到了阿特蜜斯在河邊沐浴的場面，而阿特蜜斯對於自己的純潔非常謹慎，她對阿克塞俄斯的侵犯感到憤怒。</p>
+                <br><p>於是，她將阿克塞俄斯變成了一頭鹿，讓他被自己的獵犬追趕，最終被獵犬撕裂而死。</p>
+            </div>
+            <div class="item" id="role">
+                <h1>ROLE</h1></br>
+                <img src="assests/Artemis-huntress-Paris-Louvre.jpg.jpg" width="300px" height="300px" alt="">
+                <br><br><p>圖為月亮、狩獵和野生動物的女神阿特蜜斯（Artemis）</p>
+            </div>
+            <div class="item" id="draw">
+                <h1>DRAW</h1></br>
+                <canvas id="aaa" width=400 height="400"></canvas>
+                <script>
+                   const canvas = document.getElementById('aaa');
+                   const ctx = canvas.getContext('2d');
+                   canvas.height = 400;
+
+                   ctx.beginPath();
+                //    ctx.fillStyle = 'rgb(2, 23, 119)'
+                //    ctx.fillRect(0,0,400,400);
+                //    ctx.lineWidth = 15;
+                   ctx.strokeStyle = "rgba(240, 248, 255, 0.1)";
+                   ctx.strokeRect(0,0,400,400);
+                   ctx.stroke();
+
+                   ctx.beginPath();
+                   ctx.arc(100,200,5,Math.PI*0,Math.PI/2*10000);
+                   ctx.lineWidth = 2;
+                   ctx.fillStyle = "gold";
+                   ctx.fill();
+                   ctx.strokeStyle = "yellow";
+                   ctx.stroke();
+
+                   ctx.beginPath();
+                   ctx.moveTo(100,200);
+                   ctx.lineTo(150,190);
+                   ctx.stroke();
+
+                   ctx.beginPath();
+                   ctx.arc(150,190,5,Math.PI*0,Math.PI/2*10000);
+                   ctx.lineWidth = 2;
+                   ctx.fillStyle = "gold";
+                   ctx.fill();
+                   ctx.strokeStyle = "yellow";
+                   ctx.stroke();
+
+                   ctx.beginPath();
+                   ctx.moveTo(150,190);
+                   ctx.lineTo(140,150);
+                   ctx.stroke();
+
+                   ctx.beginPath();
+                   ctx.arc(140,150,5,Math.PI*0,Math.PI/2*10000);
+                   ctx.lineWidth = 2;
+                   ctx.fillStyle = "gold";
+                   ctx.fill();
+                   ctx.strokeStyle = "yellow";
+                   ctx.stroke();
+
+                   ctx.beginPath();
+                   ctx.moveTo(150,190);
+                   ctx.lineTo(200,190);
+                   ctx.stroke();
+
+                   ctx.beginPath();
+                   ctx.arc(200,190,5,Math.PI*0,Math.PI/2*10000);
+                   ctx.lineWidth = 2;
+                   ctx.fillStyle = "gold";
+                   ctx.fill();
+                   ctx.strokeStyle = "yellow";
+                   ctx.stroke();
+
+                   ctx.beginPath();
+                   ctx.moveTo(200,190);
+                   ctx.lineTo(190,140);
+                   ctx.stroke();
+
+                   ctx.beginPath();
+                   ctx.arc(190,140,5,Math.PI*0,Math.PI/2*10000);
+                   ctx.lineWidth = 2;
+                   ctx.fillStyle = "gold";
+                   ctx.fill();
+                   ctx.strokeStyle = "yellow";
+                   ctx.stroke();
+
+                   ctx.beginPath();
+                   ctx.moveTo(190,140);
+                   ctx.lineTo(200,100);
+                   ctx.stroke();
+
+                   ctx.beginPath();
+                   ctx.arc(200,100,5,Math.PI*0,Math.PI/2*10000);
+                   ctx.lineWidth = 2;
+                   ctx.fillStyle = "gold";
+                   ctx.fill();
+                   ctx.strokeStyle = "yellow";
+                   ctx.stroke();
+
+                   ctx.beginPath();
+                   ctx.moveTo(200,190);
+                   ctx.lineTo(250,190);
+                   ctx.stroke();
+
+                   ctx.beginPath();
+                   ctx.arc(250,190,5,Math.PI*0,Math.PI/2*10000);
+                   ctx.lineWidth = 2;
+                   ctx.fillStyle = "gold";
+                   ctx.fill();
+                   ctx.strokeStyle = "yellow";
+                   ctx.stroke();
+
+                   ctx.beginPath();
+                   ctx.moveTo(250,190);
+                   ctx.lineTo(300,190);
+                   ctx.stroke();
+
+                   ctx.beginPath();
+                   ctx.arc(300,190,5,Math.PI*0,Math.PI/2*10000);
+                   ctx.lineWidth = 2;
+                   ctx.fillStyle = "gold";
+                   ctx.fill();
+                   ctx.strokeStyle = "yellow";
+                   ctx.stroke();
+
+                   ctx.beginPath();
+                   ctx.moveTo(300,190);
+                   ctx.lineTo(320,150);
+                   ctx.stroke();
+
+                   ctx.beginPath();
+                   ctx.arc(320,150,5,Math.PI*0,Math.PI/2*10000);
+                   ctx.lineWidth = 2;
+                   ctx.fillStyle = "gold";
+                   ctx.fill();
+                   ctx.strokeStyle = "yellow";
+                   ctx.stroke();
+
+
+
+
+
+
+
+
+
+
+                </script>
+
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

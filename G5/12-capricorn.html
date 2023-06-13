@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>星星知希 – 摩羯座 Capricorn</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            background-image: url(./picturec/background2.jpg);
+            background-size: auto 300vh;
+            height: 100vh;
+            width: 100%;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+/* 
+        header {
+            height: 90px;
+            width: 100%;
+        } */
+
+        header {
+            height: 90px;
+            width: 100%;
+            /* background-color: rgba(0, 0, 0, 0.9); */
+            /* position: sticky; */
+            /* top: 0; */
+        }
+
+        main {
+            width: 100%;
+            height: 1500px;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .container {
+            /* padding: 30px; */
+            margin: 30px;
+            width: 90%;
+
+            /* display: grid;
+            grid-template-rows: repeat(3, 500px);
+            grid-auto-columns: 100%;
+            justify-content: center; */
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+
+            /* background-color: black; */
+            gap: 10px;
+
+        }
+
+        .item {
+            width: 100%;
+            height: max-content;
+            background-color: rgba(240, 248, 255, 0.1);
+            border: 1px solid grey;
+            border-radius: 5px;
+            justify-content: center;
+            padding: 30px;
+            text-align: center;
+
+            line-height: 3rem;
+        }
+
+        button {
+            background-color: transparent;
+            box-sizing: border-box;
+            border: none;
+            font-size: 30px;
+            margin: 10px;
+        }
+
+        header a {
+            color: white;
+            text-decoration-line: none;
+        }
+
+        #logo img {
+            width: 100px;
+            height: 100px;
+            margin-top: 5px;
+            margin-left: 10px;
+            position: relative;
+        }
+
+        #logo img:hover {
+            width: 105px;
+            height: 105px;
+            opacity: 1;
+            transition: 1s;
+        }
+
+        #logo {
+            float: left;
+            width: 10%;
+        }
+
+        #menu {
+            float: right;
+            text-align: center;
+            padding-right: 30px;
+            margin-top: 25px;
+        }
+
+        .story {
+            color: white;
+            padding-right: 40px;
+            text-decoration: none;
+        }
+
+        .story a:hover {
+            color: gold;
+            /* width: 73%; */
+        }
+
+        .role {
+            color: white;
+            margin-right: 50px;
+            text-decoration: none;
+        }
+
+        .RoleImg {
+            object-fit: cover;
+            padding: 2%;
+        }
+
+        .role a:hover {
+            color: gold;
+        }
+
+        .draw {
+            color: white;
+            margin-right: 80px;
+            text-decoration: none;
+        }
+
+        .draw a:hover {
+            color: gold;
+        }
+
+        h1,
+        p {
+            color: rgba(240, 248, 255, 1);
+        }
+
+        h1{
+            /* font-size: 3rem; */
+            padding: 2%;
+        }
+
+        #myCanvas{
+            
+            margin-top: 20%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div id="logo">
+            <a href="start.html"><img src="./picturec/logo.png" alt=""></a>
+        </div>
+        <div id="menu">
+            <button class="story"><a href="#story">story</a></button>
+            <button class="role"><a href="#role">role</a></button>
+            <button class="draw"><a href="#draw">draw</a></button>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+
+            <div class="item" id="story">
+                <h1>STORY</h1>
+                <p>牧羊神潘恩是漢密斯的兒子，他掌管宙斯的羊群，是牧羊人的守護神，</p>
+                <p>同時也是色慾相當重的一位神。他上半身是人、下半身是山羊，頭上長了兩隻角，模樣十分醜陋，</p>
+                <p>這讓潘恩非常自卑與難堪，常在夜晚裡獨自吹奏自己製作的葦笛，藉此排遣憂傷。</p>
+                <p>潘恩雖然外貌醜陋，卻擅長唱歌、跳舞與吹奏。這天眾神在河邊舉辦派對，</p>
+                <p>宙斯知道潘恩吹得一手好笛，便邀請他為眾神演奏助興。派對進行到一半，</p>
+                <p>突然一頭體型龐大的怪物出現，現場頓時陷入一片混亂，眾神大驚失色，馬上變身成各種動物逃難。</p>
+                <p>潘恩跳進了河中想變成魚逃走，不過由於緊張，所以只有下半身變成魚，上半身還是人的型態。</p>
+                <p>事後宙斯覺得這件事情很有趣，於是將這個形象放到天上，成為現在的摩羯座。</p>
+            </div>
+
+            <div class="item" id="role">
+                <h1>ROLE</h1>
+                <img src="./picturec/25588464-bd0ab892c5a62a2e.jpg" width="300px" height="300px" alt="" class="RoleImg">
+                <p>潘（古希臘語：Πάν，羅馬化：Pán）</p>
+            </div>
+
+            <div class="item" id="draw">
+                <h1>DRAW</h1>
+                <canvas id="myCanvas" height="650" width="800"></canvas>
+            </div>
+
+            <script> 
+                const canvas = document.getElementById("myCanvas");
+                const ctx = canvas.getContext("2d");
+        
+                ctx.beginPath();
+                ctx.moveTo(130,200)
+                ctx.lineTo(220,230)
+                ctx.lineTo(380,250)
+                ctx.lineTo(590,130)
+                ctx.lineTo(587,90)
+                ctx.lineTo(590,130)
+                ctx.lineTo(570,180)
+                ctx.lineTo(560,400)
+                ctx.lineTo(500,440)
+                ctx.lineTo(200,340)
+                ctx.closePath()
+                ctx.strokeStyle = "aliceblue"
+                // ctx.closePath()
+                ctx.stroke()
+        
+                ctx.beginPath();
+                ctx.arc(130, 200, 4.5, Math.PI*0, Math.PI*2, true);
+                ctx.fillStyle = "white"
+                ctx.fill();
+        
+                ctx.beginPath();
+                ctx.arc(380,250, 5, Math.PI*0, Math.PI*2, true);
+                ctx.fillStyle = "white"
+                ctx.fill();
+        
+                ctx.beginPath();
+                ctx.arc(590,130, 2, Math.PI*0, Math.PI*2, true);
+                ctx.fillStyle = "white"
+                ctx.fill();
+        
+                ctx.beginPath();
+                ctx.arc(587,90, 6, Math.PI*0, Math.PI*2, true);
+                ctx.fillStyle = "white"
+                ctx.fill();
+        
+                ctx.beginPath();
+                ctx.arc(570,180, 3, Math.PI*0, Math.PI*2, true);
+                ctx.fillStyle = "white"
+                ctx.fill();
+        
+                ctx.beginPath();
+                ctx.arc(560,400, 5, Math.PI*0, Math.PI*2, true);
+                ctx.fillStyle = "white"
+                ctx.fill();
+        
+                ctx.beginPath();
+                ctx.arc(500,440, 4, Math.PI*0, Math.PI*2, true);
+                ctx.fillStyle = "white"
+                ctx.fill();
+        
+                ctx.beginPath();
+                ctx.arc(200,340, 4, Math.PI*0, Math.PI*2, true);
+                ctx.fillStyle = "white"
+                ctx.fill();
+            </script>
+    </main>
+</body>
+
+</html>

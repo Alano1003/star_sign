@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>星星知希 – 雙子座 Gemini</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        body {
+            background-image: url(./assests/background2.jpg);
+            background-size: auto 300vh;
+            height: 100vh;
+            width: 100%;
+        }
+        header{
+            height: 90px;
+            width: 100%;
+        }
+        main{
+            width: 100%;
+            height: 1500px;
+        }
+        .container{
+            /* padding: 30px; */
+            margin: 30px;
+            width: 90%;
+            display: grid;
+            grid-template-rows: 300px 550px 650px;
+            grid-auto-columns: 100%;
+            justify-content: center;
+            /* background-color: black; */
+            gap: 10px;
+            
+        }
+        .item{
+            width: 100%;
+            background-color: rgba(240, 248, 255, 0.1);
+            border: 1px solid grey;
+            border-radius: 5px 5px 5px 5px;
+            justify-content: center;
+            padding: 30px;
+            text-align: center;
+        }
+
+        button{
+            background-color: transparent;
+            box-sizing: border-box;
+            border: none;
+            font-size: 30px;
+            margin: 10px;
+        }
+        
+        header a{
+            color: white;
+            text-decoration-line: none;
+        }
+
+        #logo img {
+            width: 100px;
+            height: 100px;
+            margin-top: 5px;
+            margin-left: 10px;
+            position: relative;
+        }
+        #logo img:hover{
+            width: 105px;
+            height: 105px;
+            opacity: 1;
+            transition: 1s;
+        }
+        #logo{
+            float: left;
+            width: 10%;
+        }
+
+        #menu{
+            float: right;
+            text-align: center;
+            padding-right: 30px;
+            margin-top: 25px;
+        }
+        .story{
+            color: white;
+            padding-right: 40px;
+            text-decoration: none;
+        }
+        .story a:hover {
+            color: gold;
+            /* width: 73%; */
+        }
+
+        .role{
+            color: white;
+            margin-right: 50px;
+            text-decoration: none;
+        }
+        .role a:hover{
+            color: gold;
+        }
+
+        .draw{
+            color: white;
+            margin-right: 80px;
+            text-decoration: none;
+        }
+        .draw a:hover{
+            color: gold;
+        }
+        #story{
+            text-align: center;
+        }
+        h1, h3{
+            color: white;
+        }
+        #story p{
+            color: white;
+        }
+        #role p{
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div id="logo">
+            <a href="start.html"><img src="./assests/logo.png" alt=""></a>
+        </div>
+        <div id="menu">
+            <button class="story"><a href="#story">story</a></button>
+            <button class="role"><a href="#role">role</a></button>
+            <button class="draw"><a href="#draw">draw</a></button>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="item" id="story">
+                <h1>STORY</h1></br>
+                <br><p>雙子座代表的是希臘神話中的天神宙斯與斯巴達王后勒達所生的孿生子-卡斯托耳和波魯克斯（合稱狄俄斯庫里兄弟），兩人一生充滿無數的英雄壯舉。</p>
+                <br><p>但他們因和伊達斯和林叩斯分配戰利品時產生矛盾，互相反目成仇並開始決鬥，結果林叩斯被卡斯托耳殺死，卡斯托耳被伊達斯殺死，伊達斯又被波魯克斯殺死。</p>
+                <br><p>波魯克斯向宙斯哀求如果能讓卡斯托耳復活，他寧願放棄自己的不死之身。宙斯被兄弟倆的友愛精神所感動，將他們提升到天界，成為雙子座。</p>
+            </div>
+            <div class="item" id="role">
+                <h1>ROLE</h1></br>
+                <img src="./assests/gemini.jpg" width="300px" height="300px" alt="">
+                <h3>圖為卡斯托和波魯克斯正在劫掠留西帕斯的女兒</h3></br>
+                <p>哥哥波魯克斯的父親是宙斯，擁有永恆的生命，弟弟卡斯托的父親是斯巴達國王廷達柔斯，為凡人。</p>
+                <p>兄弟倆都是優秀的獵人和馴馬師。</p>
+            </div>
+            <div class="item" id="draw">
+                <h1>DRAW</h1></br>
+                <canvas id="myCanvas" height="600" width="600"></canvas>
+            </div>
+            <script>
+                const canvas = document.getElementById("myCanvas");
+                const ctx = canvas.getContext("2d");
+        
+                ctx.beginPath();
+                ctx.moveTo(400, 500)
+                ctx.lineTo(500, 250)
+                ctx.lineTo(570, 255)
+                ctx.lineTo(500, 250)
+                ctx.lineTo(440, 210)
+                ctx.lineTo(340, 80)
+                ctx.lineTo(300, 70)
+                ctx.lineTo(230, 200)
+                ctx.lineTo(440, 400)
+                // ctx.lineTo()
+                ctx.strokeStyle = "aliceblue"
+                // ctx.closePath()
+                ctx.stroke()
+        
+                ctx.beginPath();
+                ctx.arc(400, 500, 4, Math.PI*0, Math.PI*2, true);
+                ctx.fillStyle = "white"
+                ctx.fill();
+        
+                ctx.beginPath();
+                ctx.arc(500,250, 4, Math.PI*0, Math.PI*2, true);
+                ctx.fillStyle = "white"
+                ctx.fill();
+        
+                ctx.beginPath();
+                ctx.arc(570, 255, 4, Math.PI*0, Math.PI*2, true);
+                ctx.fillStyle = "white"
+                ctx.fill();
+        
+                ctx.beginPath();
+                ctx.arc(500, 250, 4, Math.PI*0, Math.PI*2, true);
+                ctx.fillStyle = "white"
+                ctx.fill();
+        
+                ctx.beginPath();
+                ctx.arc(500, 250, 4, Math.PI*0, Math.PI*2, true);
+                ctx.fillStyle = "white"
+                ctx.fill();
+        
+                ctx.beginPath();
+                ctx.arc(440, 210, 4, Math.PI*0, Math.PI*2, true);
+                ctx.fillStyle = "white"
+                ctx.fill();
+        
+                ctx.beginPath();
+                ctx.arc(340, 80, 4, Math.PI*0, Math.PI*2, true);
+                ctx.fillStyle = "white"
+                ctx.fill();
+        
+                ctx.beginPath();
+                ctx.arc(300, 70, 4, Math.PI*0, Math.PI*2, true);
+                ctx.fillStyle = "white"
+                ctx.fill();
+        
+                ctx.beginPath();
+                ctx.arc(230, 200, 4, Math.PI*0, Math.PI*2, true);
+                ctx.fillStyle = "white"
+                ctx.fill();
+        
+                ctx.beginPath();
+                ctx.arc(440, 400, 4, Math.PI*0, Math.PI*2, true);
+                ctx.fillStyle = "white"
+                ctx.fill();
+            </script>
+        </div>
+    </main>
+</body>
+
+</html>

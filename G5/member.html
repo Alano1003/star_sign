@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>星星知希 – 成員介紹</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            background-image: url(./assests/background2.jpg);
+            background-size: auto 300vh;
+            position: relative;
+            height: 100%;
+            width: 100%;
+        }
+
+        header{
+            height: 90px;
+            width: 100%;
+            position: sticky;
+            top: 0;
+        }
+
+        main{
+            width: 100%;
+            height: 600px;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .container{
+            display: grid;
+            margin: 30px;
+            height: 80%;
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            /* justify-content: center; */
+            /* background-color: black; */
+            gap: 10px;
+        }
+
+        .item{
+            background-color: rgba(240, 248, 255, 0.1);
+            border: 1px solid grey;
+            border-radius: 5px 5px 5px 5px;
+            justify-content: center;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .logo img {
+            margin-top: 5px;
+            width: 100px;
+            height: 100px;
+            margin-left: 10px;
+            position: relative;
+        }
+        .logo img:hover{
+            width: 105px;
+            height: 105px;
+            opacity: 1;
+            transition: 1s;
+        }
+        h3{
+            margin-top: 10px;
+            color: aliceblue;
+        }
+        </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="./assests/logo.png" alt=""></a>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="item" id="yi">
+                <h3>1093202 吳品萱</h3></br>
+                <img src="./assests/rping.jpg" height="280px" width="210px" alt="">
+                </br><br><h3>用嘴巴做事的務實派</h3>
+            </div>
+            <div class="item" id="rping">
+                <h3>1111805 楊智涵</h3></br>
+                <img src="./assests/cc.jpg" height="280px" width="210px" alt="">
+                </br><br><h3>為了休息而工作的效率派</h3>
+            </div>
+            <div class="item" id="topa">
+                <h3>1111808 江倖衣</h3></br>
+                <img src="./assests/yi.jpg" height="280px" width="210px" alt="">
+                </br><br><h3>腳踏實地的拖延派</h3>
+            </div>
+            <div class="item" id="cc">
+                <h3>1111809 吳金玲</h3></br>
+                <img src="./assests/topa.jpg" height="280px" width="210px" alt="">
+                </br><br><h3>通宵趕稿的爆肝派</h3>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

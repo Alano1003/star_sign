@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>星星知希 – 巨蟹座 Cancer</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        body {
+            background-image: url(./assests/background2.jpg);
+            background-size: auto 300vh;
+            height: 100vh;
+            width: 100%;
+        }
+        header{
+            height: 90px;
+            width: 100%;
+        }
+        main{
+            width: 100%;
+            height: 1500px;
+        }
+        .container{
+            /* padding: 30px; */
+            margin: 30px;
+            width: 90%;
+            display: grid;
+            grid-template-rows: 500px 500px 600px;
+            grid-auto-columns: 100%;
+            justify-content: center;
+            /* background-color: black; */
+            gap: 10px;
+            
+        }
+        .item{
+            width: 100%;
+            background-color: rgba(240, 248, 255, 0.1);
+            border: 1px solid grey;
+            border-radius: 5px 5px 5px 5px;
+            justify-content: center;
+            padding: 30px;
+            text-align: center;
+        }
+
+        button{
+                background-color: transparent;
+                box-sizing: border-box;
+                border: none;
+                font-size: 30px;
+                margin: 10px;
+        }
+        
+        header a{
+            color: white;
+            text-decoration-line: none;
+        }
+
+        #logo img {
+            width: 100px;
+            height: 100px;
+            margin-top: 5px;
+            margin-left: 10px;
+            position: relative;
+        }
+        #logo img:hover{
+            width: 105px;
+            height: 105px;
+            opacity: 1;
+            transition: 1s;
+        }
+        #logo{
+            float: left;
+            width: 10%;
+        }
+
+        #menu{
+            float: right;
+            text-align: center;
+            padding-right: 30px;
+            margin-top: 25px;
+        }
+        .story{
+            color: white;
+            padding-right: 40px;
+            text-decoration: none;
+        }
+        .story a:hover {
+            color: gold;
+            /* width: 73%; */
+        }
+
+        .role{
+            color: white;
+            margin-right: 50px;
+            text-decoration: none;
+        }
+        .role a:hover{
+            color: gold;
+        }
+
+        .draw{
+            color: white;
+            margin-right: 80px;
+            text-decoration: none;
+        }
+        .draw a:hover{
+            color: gold;
+        }
+        h1,p {
+            color: white;
+        }
+        /* canvas{
+            
+            display: block;
+            border: 1px solid darkgray;
+        } */
+    </style>
+</head>
+
+<body>
+  
+    <header>
+        <div id="logo">
+            <a href="start.html"><img src="./assests/logo.png" alt=""></a>
+        </div>
+        <div id="menu">
+            <button class="story"><a href="#story">story</a></button>
+            <button class="role"><a href="#role">role</a></button>
+            <button class="draw"><a href="#draw">draw</a></button>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="item" id="story">
+                <h1>STORY</h1></br>
+                <br><p>在古希臘神話中，巨蟹座的故事涉及到太陽神、藝術、音樂和預言的神明阿波羅（Apollo）</p>
+                <br><p>和魔法、魔藥和巫術的女神赫卡忒（Hecate）之間的一場爭執。</p>
+                <br><p>一天，阿波羅向赫卡忒訴苦說他被一位名叫勾斯德（Gaesed）的人妖母（Monster）惡意追趕，並嘲笑自己無法打敗她。</p>
+                <br><p>赫卡忒聽後決定幫助阿波羅，於是她給了他一些神奇的藥草，並告訴他如何使用它們。阿波羅在赫卡忒的指示下，前往了勾斯德的巢穴，並用藥草把她引誘出來。</p>
+                <br><p>當勾斯德現身時，阿波羅開始向她發動攻擊，並射出箭矢。勾斯德卻是一個強大的怪物，她的外殼非常堅硬，使得阿波羅的箭無法傷害到她。</p>
+                <br><p>然而，阿波羅之後因為他對赫卡忒的幫助不敬，拒絕給予她應有的尊敬，而遭到諸神的譴責。</p>
+                <br><p>他們決定將赫卡忒的靈魂轉移到巨蠍座中，成為一個永恆的星座，作為對她幫助阿波羅的獎賞和尊崇。</p>
+            </div>
+            <div class="item" id="role">
+                <h1>ROLE</h1></br>
+                <img src="assests/640px-AN00969955_001_l.jpg" width="300px" height="300px" alt="">
+                <br><br><p>圖為魔法、魔藥和巫術的女神赫卡忒（Hecate）</p>
+                
+        </div>
+
+            <div class="item" id="draw">
+                <h1>DRAW</h1></br>
+                <canvas id="aaa" width=400 height="400"></canvas>
+                <script>
+                   const canvas = document.getElementById('aaa');
+                   const ctx = canvas.getContext('2d');
+                   canvas.height = 400;
+
+                   ctx.beginPath();
+                //    ctx.fillStyle = 'rgb(2, 23, 119)'
+                //    ctx.fillRect(0,0,400,400);
+                //    ctx.lineWidth = 15;
+                   ctx.strokeStyle = "rgba(240, 248, 255, 0.1)";
+                   ctx.strokeRect(0,0,400,400);
+                   ctx.stroke();
+
+                   ctx.beginPath();
+                   ctx.arc(100,100,5,Math.PI*0,Math.PI/2*10000);
+                   ctx.lineWidth = 2;
+                   ctx.fillStyle = "gold";
+                   ctx.fill();
+                   ctx.strokeStyle = "yellow";
+                   ctx.stroke();
+
+                   ctx.beginPath();
+                   ctx.moveTo(100,100);
+                   ctx.lineTo(160,180);
+                   ctx.stroke();
+
+                   ctx.beginPath();
+                   ctx.arc(160,180,5,Math.PI*0,Math.PI/2*10000);
+                   ctx.lineWidth = 2;
+                   ctx.fillStyle = "gold";
+                   ctx.fill();
+                   ctx.strokeStyle = "yellow";
+                   ctx.stroke();
+
+                   ctx.beginPath();
+                   ctx.moveTo(160,180);
+                   ctx.lineTo(180,210);
+                   ctx.stroke();
+
+                   ctx.beginPath();
+                   ctx.arc(180,210,5,Math.PI*0,Math.PI/2*10000);
+                   ctx.lineWidth = 2;
+                   ctx.fillStyle = "gold";
+                   ctx.fill();
+                   ctx.strokeStyle = "yellow";
+                   ctx.stroke();
+
+                   ctx.beginPath();
+                   ctx.moveTo(180,210);
+                   ctx.lineTo(170,330);
+                   ctx.stroke();
+
+                   ctx.beginPath();
+                   ctx.arc(170,330,5,Math.PI*0,Math.PI/2*10000);
+                   ctx.lineWidth = 2;
+                   ctx.fillStyle = "gold";
+                   ctx.fill();
+                   ctx.strokeStyle = "yellow";
+                   ctx.stroke();
+
+                   ctx.beginPath();
+                   ctx.moveTo(180,210);
+                   ctx.lineTo(330,300);
+                   ctx.stroke();
+
+                   ctx.beginPath();
+                   ctx.arc(330,300,5,Math.PI*0,Math.PI/2*10000);
+                   ctx.lineWidth = 2;
+                   ctx.fillStyle = "gold";
+                   ctx.fill();
+                   ctx.strokeStyle = "yellow";
+                   ctx.stroke();
+
+                   
+
+                   
+
+                </script>
+
+            </div>
+        </div>
+    
+    </main>
+
+</body>
+
+</html>
